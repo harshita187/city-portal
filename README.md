@@ -1,7 +1,7 @@
 ![s13](https://github.com/harshita187/city-portal-hackathon-frontend/assets/121415693/d8058f29-fe90-48fb-adb3-77c64e81b5dd)
 
 
-# City Portal Frontend
+# City Portal 
 
 This project is the frontend part of the City Portal application, designed to allow citizens to report issues, access city services, and view real-time data on city operations.
 
