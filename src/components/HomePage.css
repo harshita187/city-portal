@@ -1,0 +1,117 @@
+/* HomePage.css */
+
+.homepage {
+    font-family: 'Arial', sans-serif;
+    color: #333;
+    padding: 20px;
+  }
+  
+  .hero {
+    position: relative;
+    background: url('../images/city.jpg') no-repeat center center/cover;
+    color: #fff;
+    text-align: center;
+    padding: 80px 20px;
+    border-radius: 10px;
+    margin-bottom: 30px;
+  }
+  
+  .hero::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5); /* Black overlay with 50% opacity */
+    border-radius: 10px;
+    z-index: 1; /* Ensure the overlay is above the background image but below the header and text */
+  }
+  
+  .hero h1, .hero p, .hero .btn-primary {
+    position: relative;
+    z-index: 2; /* Ensure text and button are above the overlay */
+  }
+  
+  .hero h1 {
+    font-size: 2.5em;
+    margin-bottom: 10px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); /* Add text shadow for better readability */
+  }
+  
+  .hero p {
+    font-size: 1.2em;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); /* Add text shadow for better readability */
+  }
+  
+  .btn-primary {
+    padding: 10px 20px;
+    font-size: 1em;
+    color: #fff;
+    background-color: #007bff;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s;
+  }
+  
+  .btn-primary:hover {
+    background-color: #0056b3;
+  }
+  
+  .quick-links {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 30px;
+  }
+  
+  .link-card {
+    background: #f9f9f9;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    width: 30%;
+    text-align: center;
+    padding: 20px;
+    transition: box-shadow 0.3s;
+  }
+  
+  .link-card:hover {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .link-card i {
+    font-size: 2.5em;
+    color: #007bff;
+    margin-bottom: 10px;
+  }
+  
+  .link-card h2 {
+    font-size: 1.5em;
+    color: #333;
+  }
+  
+  .about, .announcements {
+    margin-bottom: 30px;
+  }
+  
+  .about h2, .announcements h2 {
+    font-size: 2em;
+    margin-bottom: 10px;
+    color: #333;
+  }
+  
+  .about p, .announcements ul {
+    font-size: 1.2em;
+    line-height: 1.6;
+  }
+  
+  .announcements ul {
+    padding: 30px;
+    list-style: disc inside;
+  }
+  
+  .announcements li {
+    margin-bottom: 5px;
+  }
+  
